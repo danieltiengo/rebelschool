@@ -20,6 +20,9 @@ export class UserListPage implements OnInit {
     this.userService.getall().subscribe(
       res => {
 
+        this.users = res;
+        console.log(this.users);
+
       },
       erro => {
 
